@@ -1,0 +1,276 @@
+/* MADE BY: BADER ALMAZMUMI */
+
+/*GLOPAL CSS */
+
+* {
+    font-family: 'droid-sans';
+    direction: rtl;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* LOGO */
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.logo img {
+    width: 200px;
+    height: 61px;
+}
+
+
+/* SECTIONS 1 - HEADER */
+
+.section:nth-child(1) {
+    background-image: linear-gradient(300deg, rgba(137, 211, 217, 0.8), rgba(248, 238, 95, 0.77)), url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.welcomeMsg {
+    text-align: center;
+    margin: 30px;
+    font-size: 60px;
+    color: #FFF;
+}
+
+.countries h1 {
+
+    margin: 0 auto 0 auto;
+    text-align: right;
+    width: 650px;
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+.section:nth-child(1) .container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+}
+
+.countries {
+    border-radius: 5px;
+    width: 50vw;
+    padding: 10px;
+}
+
+
+
+.countries p a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.countries p {
+    display: inline-block;
+    font-size: 20px;
+    min-width: 15vw;
+    background-color: #FFF;
+    border-radius: 64px;
+}
+
+.countries p img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+
+
+/* SECTION 2 */
+
+.section:nth-child(2) {
+    background-color: #edea6a;
+}
+
+.section:nth-child(2) h1 {
+    text-align: center;
+}
+
+
+/* SECTION 3 */
+
+.section:nth-child(3) {
+
+    background-color: #89d3d9;
+}
+
+/* CONTACT US FORM */
+
+#contactUSForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 10vw;
+}
+
+#contactUSForm .input {
+    padding: 10px;
+    border: none;
+    -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
+    box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
+/*    width: 100%;*/
+    margin-bottom: 30px;
+    width: 100%;
+}
+.inputMain{
+    float: right!important;
+}
+
+#contactUSForm .input:nth-child(2) {
+    margin-left: 5px;
+    
+}
+
+#contactUSForm .input:nth-child(1) {
+
+/*    margin-right: 5px;*/
+}
+
+#contactUSForm .msg {
+    padding: 10px;
+    border: none;
+    -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
+    box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
+}
+
+#contactUSForm .button {
+    margin-top: 20px;
+    background-color: #edea6a;
+    height: 30px;
+    border-radius: 6px;
+    -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
+    box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
+    border: none;
+
+}
+
+.nameAndEmail {
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+*/
+}
+
+/* FOOTER */
+
+.section:nth-child(4) {
+    background-color: #525250;
+    padding: 10px;
+}
+
+.footer p {
+    color: #FFF;
+    text-align: center;
+    height: 70px;
+    line-height: 70px
+}
+
+.footer a {
+    color: #FFF;
+}
+
+.footer a:hover {
+    color: #edea6a;
+}
+
+.footer .social i {
+    margin: 10px 5px;
+    font-size: 20px;
+    color: #edea6a;
+}
+
+.footer .copyright {
+    font-family: sans-serif;
+}
+
+.footer .copyright i {
+    color: #d33939;
+}
+
+
+
+/* MOBILE CSS */
+
+@media screen and (max-width:992px) {
+    .countries {
+        width: 100vw;
+        padding: 0;
+
+    }
+    .countries h1 {
+        text-align: center;
+        width: 100vw;
+        margin: 0;
+        position: absolute;
+        bottom: 95px;
+        font-size: 25px;
+
+
+    }
+    .countriesList {
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin: auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+    }
+
+    .countriesList p {
+        text-align: center;
+        background-color: transparent;
+
+    }
+    .countriesList p img {
+        margin: 0;
+    }
+
+    #contactUSForm .input {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+}
