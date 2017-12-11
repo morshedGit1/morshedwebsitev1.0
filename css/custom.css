@@ -70,7 +70,7 @@ a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     -ms-flex-pack: distribute;
     justify-content: space-around;
 
@@ -155,7 +155,7 @@ a:hover {
 
 #contactUSForm .input:nth-child(2) {
     margin-left: 5px;
-    
+
 }
 
 #contactUSForm .input:nth-child(1) {
