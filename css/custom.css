@@ -3,7 +3,7 @@
 /*GLOPAL CSS */
 
 * {
-    font-family: 'droid-sans';
+    font-family: 'Cairo', sans-serif;
     direction: rtl;
 }
 
@@ -31,7 +31,7 @@ a:hover {
 /* SECTIONS 1 - HEADER */
 
 .section:nth-child(1) {
-    background-image: linear-gradient(300deg, rgba(137, 211, 217, 0.8), rgba(248, 238, 95, 0.77)), url(../img/bg.jpg);
+    background-image: linear-gradient(300deg, rgba(137, 211, 217, 0.8), rgba(248, 238, 95, 0.77)), url(../img/homePageBackground.jpg);
     background-position: center center;
     background-size: cover;
 }
@@ -42,6 +42,12 @@ a:hover {
     margin: 30px;
     font-size: 60px;
     color: #FFF;
+}
+
+select{
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
 }
 
 .countries h1 {
@@ -173,7 +179,7 @@ a:hover {
 #contactUSForm .button {
     margin-top: 20px;
     background-color: #edea6a;
-    height: 30px;
+    height: 50px;
     border-radius: 6px;
     -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
     box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
@@ -191,6 +197,10 @@ a:hover {
 
 /* FOOTER */
 
+.links a{
+  padding: 0.3em;
+}
+
 .section:nth-child(4) {
     background-color: #525250;
     padding: 10px;
@@ -199,12 +209,14 @@ a:hover {
 .footer p {
     color: #FFF;
     text-align: center;
+    margin-top: 10px
     height: 70px;
     line-height: 70px
 }
 
 .footer a {
     color: #FFF;
+    display: inline-block;
 }
 
 .footer a:hover {
@@ -217,16 +229,6 @@ a:hover {
     color: #edea6a;
 }
 
-.footer .copyright {
-    font-family: sans-serif;
-}
-
-.footer .copyright i {
-    color: #d33939;
-}
-
-
-
 /* MOBILE CSS */
 
 @media screen and (max-width:992px) {
@@ -235,6 +237,9 @@ a:hover {
         padding: 0;
 
     }
+    .welcomeMsg{
+      font-size: 40px;
+    }
     .countries h1 {
         text-align: center;
         width: 100vw;
@@ -242,8 +247,6 @@ a:hover {
         position: absolute;
         bottom: 95px;
         font-size: 25px;
-
-
     }
     .countriesList {
         width: 100vw;
@@ -256,21 +259,16 @@ a:hover {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-
     }
-
     .countriesList p {
         text-align: center;
         background-color: transparent;
-
     }
     .countriesList p img {
         margin: 0;
     }
-
     #contactUSForm .input {
         margin-left: 0!important;
         margin-right: 0!important;
     }
-
 }

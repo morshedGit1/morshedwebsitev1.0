@@ -10,13 +10,13 @@
     <!--STYLESHEETS-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&amp;subset=arabic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=droid-sans" />
     <link rel="stylesheet" href="css/custom.css" type="text/css">
 </head>
 
 <body>
-
     <!--FULLPAGE SECTIONS-->
     <div id="warpper">
         <!--SECTION 1-->
@@ -29,8 +29,15 @@
                 </div>
 
                 <div class="row countries">
-                    <h1>اختر وجهتك:</h1>
-                    <div class="countriesList">
+
+                  <h1>اختر وجهتك:</h1>
+                  <select>
+                    <option>اسطنبول</option>
+                    <option>بورصه</option>
+                    <option>يلوا</option>
+                    <option>سبانجا</option>
+                  </select>
+                    <!-- <div class="countriesList">
 
                         <div class="col-md-4">
                             <p><a href="#"> <img src="img/saudi-arabia-flag.png">السعودية</a></p>
@@ -42,7 +49,7 @@
                             <p><a href="#"><img src="img/azerbaijan-flag.png">اذربيجان</a></p>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -56,27 +63,31 @@
             <form id="contactUSForm" method="post">
                 <div>
                     <h1> اتصل بنا </h1>
-                    <p>سوف نكون في خدمتك دائما</p>
+                    <p>تواصل معنا, نحن نهتم بعملائنا</p>
                 </div>
                 <div class="row">
 
                     <div class="inputMain col-xs-12 col-lg-6">
-                <input class="input" name="name" id="name" type="text" required="required" placeholder="الاسم الكريم">
+                <input class="input" name="name" id="name" type="text" required="required" placeholder="اسمك الكريم">
                 </div>
                     <div class="inputMain col-xs-12 col-lg-6">
-                <input class="input" name="email" id="email" type="text" required="required" placeholder="الايميل الالكتروني">
+                <input class="input" name="email" id="email" type="text" required="required" placeholder="بريدك الالكتروني">
                     </div>
                  </div>
-                <textarea name="msg" class="msg" id="msg" required="required" rows="8 " placeholder="رسالتك هنا"> </textarea>
+                <textarea name="msg" class="msg" id="msg" required="required" rows="8" style="resize: none"> </textarea>
                 <input class="button" type="button" id="submitFormData" onclick="SubmitFormData();" value="ارسل" />
             </form>
 
         </div>
         <div class="section fp-auto-height footer">
-            <p class="copyright col-sm-4">Made with <i class="fa fa-heart" aria-hidden="true"></i> by Morshed</p>
-            <p class="links col-sm-4"><a>الشروط والاحكام</a></p>
-            <p class="social col-sm-4">تابعنا على:<a href="fb.com" target="_blank">
-                <i class="fa fa-facebook-official" aria-hidden="true"></a></i><i class="fa fa-instagram" aria-hidden="true"></i><a></a> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <p class="copyright col-sm-4">Made with <i class="fa fa-heart" aria-hidden="true" style="color: #d33939"></i> by <span style="color: #edea6a">Morshed</span></p>
+            <p class="links col-sm-4">
+              <a>شروط الالغاء</a> | <a>شروط وأحكام المسافرين</a> | <a>الشروط والاحكام</a>
+            </p>
+            <p class="social col-sm-4">تابعنا على:
+              <a href="https://www.facebook.com/Morshedapp/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/morshedapp/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/Morshedapp" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </p>
 
         </div>
