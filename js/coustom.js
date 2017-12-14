@@ -16,7 +16,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-    document.getElementById('modal-content').className = " modal-content";
+    modalContent.className = " modal-content";
 }
 
 // When the user clicks anywhere outside of the modal, close it
