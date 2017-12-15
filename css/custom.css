@@ -50,16 +50,29 @@ select{
     border-radius: 15px;
     box-shadow: #89d3d9 2px 2px;
     border: none;
-    -webkit-appearance:none; 
+    -webkit-appearance:none;
 }
 
 .countries h1 {
     margin: 0 auto 0 auto;
     text-align: right;
     width: 650px;
-    color: #000;
+    color: #FFF;
     font-size: 30px;
     margin-bottom: 10px;
+}
+
+.countries button{
+   display = block;
+   color: #FFF;
+   background-color: #89d3d9;
+   border-radius: 5px;
+   border: none;
+   height: 5vh;
+   width: 30%;
+   font-size: 15px;
+   font-weight: bold;
+   margin: 20px 35% auto 35%;
 }
 
 
