@@ -32,13 +32,25 @@
 
                   <h1>اختر وجهتك:</h1>
                   <select>
-                    <option>اسطنبول</option>
-                    <option>بورصه</option>
-                    <option>يلوا</option>
-                    <option>سبانجا</option>
+                    <option id="Istanbul">اسطنبول</option>
+                    <option id="Bursa">بورصه</option>
+                    <option id="Yalova">يلوا</option>
+                    <option id="Sapanca">سبانجا</option>
                   </select>
-
-                  <button type="button" name="button">اختار</button>
+                  <script type="text/javascript">
+                    function openFourm(){
+                        if (document.getElementById('Istanbul').selected==true) {
+                          window.open('https://goo.gl/forms/iI60cx5achbFlNmc2', '_blank');
+                        }else if (document.getElementById('Bursa').selected==true) {
+                          window.open('https://goo.gl/forms/cEoVXiwg2eNDNHIY2', '_blank');
+                        }else if (document.getElementById('Yalova').selected==true) {
+                          window.open('https://goo.gl/forms/V2djJXKE8Q6V4Jrk1', '_blank');
+                        }else if (document.getElementById('Sapanca').selected==true) {
+                          window.open('https://goo.gl/forms/VZ59Ci7ZKM0npdf42', '_blank');
+                        }
+                    }
+                  </script>
+                  <button type="button" name="button" onclick="openFourm()">اختار</button>
                 </div>
             </div>
         </div>
@@ -63,7 +75,7 @@
                 <input class="input" name="email" id="email" type="text" required="required" placeholder="بريدك الالكتروني">
                     </div>
                  </div>
-                <textarea name="msg" class="msg" id="msg" required="required" rows="8" placeholder="اكتب رسالتك هنا"></textarea>
+                <textarea name="msg" class="msg" id="msg" required="required" rows="8" placeholder="كيف ممكن نخدمك؟"></textarea>
                 <input class="button" type="button" id="submitFormData" onclick="SubmitFormData();" value="ارسل" />
             </form>
 
@@ -95,7 +107,7 @@
 
 <p>1.&nbsp;&nbsp;&nbsp;&nbsp; عامة</p>
 
-<p>1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; مرشد هو منصة إلكترونية تربط المسافر بمرشد يقوم بتوفير الخدمات التي يطلبها المسافر بالإضافة إلى الجولات السياحية التي يرغب بها المسافر. حيث يقوم المسافر بطلب الخدمات التي يرغب بها من خلال الموقع الإلكتروني www.morshedco.net.</p>
+<p>1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; مرشد هو منصة إلكترونية تربط المسافر بمرشد يقوم بتوفير الخدمات التي يطلبها المسافر بالإضافة إلى الجولات السياحية التي يرغب بها المسافر. حيث يقوم المسافر بطلب الخدمات التي يرغب بها من خلال الموقع الإلكتروني <a href="https://www.morshedapp.com" target="_blank">www.morshedapp.com</a>.</p>
 
 <p>1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; باستخدامك للموقع الإلكتروني فأنت تقر بالامتثال والالتزام قانونياً بكامل الشروط والأحكام.</p>
 
@@ -117,7 +129,7 @@
 
 <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "المسافر": يعني مستخدم يقوم بطلب خدمة أو خدمات متعددة بالإضافة إلى طلبه لجولة سياحية بمرشد أو مجدولة عن طريق الموقع.</p>
 
-<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "موقع": يعني به الموقع الالكتروني <a href="http://www.morshedco.net">www.morshedco.net</a>.</p>
+<p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "موقع": يعني به الموقع الالكتروني <a href="https://www.morshedapp.com" target="_blank">www.morshedapp.com</a>.</p>
 
 <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "المرشد": يعني مرشد مسجل في موقع مرشد يقوم بتلبية الخدمات التي يطلبها المسافر بالإضافة إلى مرافقة المسافر في الجولات السياحية في حالة رغب في مرافقته له أو إعداد جولة سياحية مجدولة له.</p>
 
@@ -275,10 +287,8 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#warpper').fullpage({
-
               css3:false
             });
-
         });
     </script>
 </body>
