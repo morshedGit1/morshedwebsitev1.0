@@ -44,13 +44,13 @@ a:hover {
     color: #FFF;
 }
 
-select{
-  	width: 100%;
-		padding: 5px;
+select {
+    width: 100%;
+    padding: 10px;
     border-radius: 15px;
     box-shadow: #89d3d9 2px 2px;
     border: none;
-    -webkit-appearance:none;
+    -webkit-appearance: none;
 }
 
 .countries h1 {
@@ -62,17 +62,17 @@ select{
     margin-bottom: 10px;
 }
 
-.countries button{
-   display = block;
-   color: #FFF;
-   background-color: #89d3d9;
-   border-radius: 5px;
-   border: none;
-   height: 5vh;
-   width: 30%;
-   font-size: 15px;
-   font-weight: bold;
-   margin: 20px 35% auto 35%;
+.countries button {
+    display=block;
+    color: #FFF;
+    background-color: #89d3d9;
+    border-radius: 5px;
+    border: none;
+    height: 5vh;
+    width: 30%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 35% auto 35%;
 }
 
 
@@ -138,6 +138,7 @@ select{
 }
 
 
+
 /* SECTION 3 */
 
 .section:nth-child(3) {
@@ -169,7 +170,8 @@ select{
     margin-bottom: 30px;
     width: 100%;
 }
-.inputMain{
+
+.inputMain {
     float: right!important;
 }
 
@@ -180,7 +182,7 @@ select{
 
 #contactUSForm .input:nth-child(1) {
 
-/*    margin-right: 5px;*/
+    /*    margin-right: 5px;*/
 }
 
 #contactUSForm .msg {
@@ -188,7 +190,7 @@ select{
     border: none;
     -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
     box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
-		resize:none;
+    resize: none;
 }
 
 #contactUSForm .button {
@@ -202,12 +204,36 @@ select{
 
 }
 
+/* GOOGLFOURM */
+
+#backButton {
+    background-color: #673ab7;
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    box-sizing: content-box;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+iframe {
+    width: 100vw;
+    border: none;
+    height: 100vh;
+}
 
 
 /* FOOTER */
 
-.links a{
-  padding: 0.3em;
+.links a {
+    padding: 0.3em;
 }
 
 .section:nth-child(4) {
@@ -218,8 +244,7 @@ select{
 .footer p {
     color: #FFF;
     text-align: center;
-    margin-top: 10px
-    height: 70px;
+    margin-top: 10px height: 70px;
     line-height: 70px
 }
 
@@ -242,34 +267,43 @@ select{
 
 
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-
-
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
+
 .modal-content {
-	background-color: #fefefe;
-	    margin: 3vw auto;
-	    padding: 5vw;
-	    border: 1px solid #888;
-	    width: 80%;
-	    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-	    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: #fefefe;
+    margin: 3vw auto;
+    padding: 5vw;
+    border: 1px solid #888;
+    width: 80%;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 
 }
 
 /* The Close Button */
+
 .close {
     color: #aaa;
     position: absolute;
@@ -296,14 +330,14 @@ select{
         padding: 0;
 
     }
-    .welcomeMsg{
-      font-size: 40px;
+    .welcomeMsg {
+        font-size: 40px;
     }
     .countries h1 {
-			text-align: center;
-	    width: 60%;
-	    font-size: 25px;
-	    text-align: right;
+        text-align: center;
+        width: 60%;
+        font-size: 25px;
+        text-align: right;
     }
     .countriesList {
         width: 100vw;
@@ -328,12 +362,12 @@ select{
         margin-left: 0!important;
         margin-right: 0!important;
     }
-		select {
-    width: 60%;
-    margin-right: 20vw;
-    padding: 5px;
-    border-radius: 15px;
-    box-shadow: #89d3d9 2px 2px;
-    border: none;
-	}
+    select {
+        width: 60%;
+        margin-right: 20vw;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: #89d3d9 2px 2px;
+        border: none;
+    }
 }
