@@ -7,7 +7,7 @@ function init() {
     });
 }
 
-$('#warpper').on('click', 'button#backButton', function () {
+$('#warpper').on('click', 'button#closeButton', function () {
     var section = $('.fp-section.active');
     $.fn.fullpage.moveTo(1);
     setTimeout(function () {
@@ -19,7 +19,7 @@ $('#warpper').on('click', 'button#backButton', function () {
 function openFourm() {
     var toggle = false;
     if (toggle == false) {
-        $('#warpper').append('<div class="section"><button id="backButton"><i class="fa fa-arrow-left" aria-hidden="true"></i></button><iframe id="googleFourm" src=""> <h1 style="font-size:100px;"></h1></iframe></div>');
+        $('#warpper  > div:nth-child(1)').after('<div class="section"><button id="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button><button id="refreshButton" onclick="refreshIFrame()"><i class="fa fa-refresh" aria-hidden="true"></i></button><button id="backButton" onclick="backIFrame()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button><iframe id="googleFourm" src=""> <h1 style="font-size:100px;"></h1></iframe></div>');
 
         //remembering the active section / slide
         var activeSectionIndex = $('.fp-section.active').index();
@@ -42,13 +42,13 @@ function openFourm() {
 
 
     if (document.getElementById('Istanbul').selected == true) {
-        $.fn.fullpage.moveTo(5);
+        $.fn.fullpage.moveTo(2);
         document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLSdS75eA6UYY6EtO1znXI9V5w8VCOF5fRJ9J3nVhx1HZEVgAvA/viewform?embedded=true';
     } else if (document.getElementById('Bursa').selected == true) {
-        $.fn.fullpage.moveTo(5);
+        $.fn.fullpage.moveTo(2);
         document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLScjf1ETpDxt7iLD2VtInaYnt_DWzrZNbpMSazFz9cLG1rqZPw/viewform?embedded=true';
     } else if (document.getElementById('Yalova').selected == true) {
-        $.fn.fullpage.moveTo(5);
+        $.fn.fullpage.moveTo(2);
         document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLSehsJyLTDMek4vjIoCHahNzsFrKubWhyXR38xyu7Gib5K76mA/viewform?embedded=true';
     } else if (document.getElementById('Sapanca').selected == true) {
         $.fn.fullpage.moveTo(5);
@@ -154,4 +154,20 @@ function privacyAndPolicy() {
 
         }
     }
+}
+
+
+
+function refreshIFrame() {
+  document.getElementById("refreshButton").onclick = function (event){
+    document.getElementById('googleFourm').src = document.getElementById('googleFourm').src;
+  }
+}
+
+function backIFrame(){
+  document.getElementById("backButton").onclick = function (event){
+    document.getElementById('googleFourm').contentWindow.history.back(-1);
+    // window.frames['googleFourm'].history.go(-1);
+    console.log("Iam alive");
+  }
 }
