@@ -16,24 +16,23 @@ a:hover {
 /* LOGO */
 
 .logo {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 1;
+  position: static;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .logo img {
-    width: 200px;
-    height: 61px;
+  width: 349px;
+  height: 103px;
 }
 
 
 /* SECTIONS 1 - HEADER */
 
 .section:nth-child(1) {
-    background-image: linear-gradient(300deg, rgba(137, 211, 217, 0.8), rgba(248, 238, 95, 0.77)), url(../img/homePageBackground.jpg);
-    background-position: center center;
-    background-size: cover;
+
+        background-color: rgb(137, 211, 217);
 }
 
 
@@ -53,6 +52,10 @@ select {
     -webkit-appearance: none;
 }
 
+.countries{
+  z-index: 3;
+
+}
 .countries h1 {
     margin: 0 auto 0 auto;
     text-align: right;
@@ -63,16 +66,17 @@ select {
 }
 
 .countries button {
-    display=block;
-    color: #FFF;
-    background-color: #89d3d9;
-    border-radius: 5px;
-    border: none;
-    height: 5vh;
-    width: 30%;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 20px 35% auto 35%;
+      background-color: #f7ec60;
+      border-radius: 10px;
+      border: none;
+      height: auto;
+      width: 20%;
+      font-size: 15px;
+      font-weight: bold;
+      position: absolute;
+      display: block;
+      top: 9px;
+      left: 6px;
 }
 
 
@@ -125,6 +129,15 @@ select {
     margin-left: 15px;
 }
 
+.backImg{
+  position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+.searchBar{
+  position: relative;
+  margin: auto;
+}
 
 
 /* SECTION 2 */
@@ -362,7 +375,6 @@ iframe {
     .countries {
         width: 100vw;
         padding: 0;
-
     }
     .welcomeMsg {
         font-size: 40px;
@@ -373,6 +385,8 @@ iframe {
         font-size: 25px;
         text-align: right;
     }
+
+
     .countriesList {
         width: 100vw;
         position: absolute;
@@ -397,11 +411,15 @@ iframe {
         margin-right: 0!important;
     }
     select {
-        width: 60%;
-        margin-right: 20vw;
-        padding: 5px;
+        /* width: 60%; */
+        /* margin-right: 20vw; */
+        /* padding: 5px; */
         border-radius: 15px;
         box-shadow: #89d3d9 2px 2px;
         border: none;
+    }
+
+    .searchBar{
+      width: 60%;
     }
 }
