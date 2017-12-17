@@ -1,11 +1,7 @@
 // GOOGLE FOURM SECTION
 init();
 
-function init() {
-    $('#warpper').fullpage({
-
-    });
-}
+function init(){$('#warpper').fullpage({});}
 
 $('#warpper').on('click', 'button#closeButton', function () {
     var section = $('.fp-section.active');
@@ -15,11 +11,10 @@ $('#warpper').on('click', 'button#closeButton', function () {
     }, 700);
 });
 
-
 function openFourm() {
     var toggle = false;
     if (toggle == false) {
-        $('#warpper  > div:nth-child(1)').after('<div class="section"><button id="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button><button id="refreshButton" onclick="refreshIFrame()"><i class="fa fa-refresh" aria-hidden="true"></i></button><button id="backButton" onclick="backIFrame()"><i class="fa fa-arrow-left" aria-hidden="true"></i></button><iframe id="googleFourm" src=""> <h1 style="font-size:100px;"></h1></iframe></div>');
+        $('#warpper  > div:nth-child(1)').after('<div class="section"><button id="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button><iframe id="googleFourm" src=""> <h1 style="font-size:100px;"></h1></iframe></div>');
 
         //remembering the active section / slide
         var activeSectionIndex = $('.fp-section.active').index();
@@ -39,8 +34,6 @@ function openFourm() {
         toggle = true;
     }
 
-
-
     if (document.getElementById('Istanbul').selected == true) {
         $.fn.fullpage.moveTo(2);
         document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLSdS75eA6UYY6EtO1znXI9V5w8VCOF5fRJ9J3nVhx1HZEVgAvA/viewform?embedded=true';
@@ -55,11 +48,6 @@ function openFourm() {
         document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLScKUy821rVeRY3AVWRZxhMlXRpjruI9Ui-S-moKOvLMAFWpVg/viewform?embedded=true';
     }
 }
-
-
-
-
-
 
 function cancelationTerms() {
     // Get the modal
@@ -155,8 +143,6 @@ function privacyAndPolicy() {
         }
     }
 }
-
-
 
 function refreshIFrame() {
   document.getElementById("refreshButton").onclick = function (event){
