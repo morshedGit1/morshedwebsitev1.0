@@ -169,6 +169,7 @@ select {
       -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
       box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
       margin-bottom: 20px;
+      width: 100%;
 }
 
 .inputMain {
@@ -180,10 +181,6 @@ select {
 
 }
 
-#contactUSForm .input:nth-child(1) {
-
-    /*    margin-right: 5px;*/
-}
 
 #contactUSForm .msg {
     padding: 10px;
@@ -278,7 +275,7 @@ iframe {
 .footer p {
     color: #FFF;
     text-align: center;
-    margin-top: 10px height: 70px;
+    margin-top: 10px;
     line-height: 70px
 }
 
