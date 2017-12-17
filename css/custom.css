@@ -163,12 +163,12 @@ select {
 }
 
 #contactUSForm .input {
-    padding: 10px;
-    border: none;
-    -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
-    box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
-    margin-bottom: 30px;
-    width: 100%;
+  padding: 10px;
+      border: none;
+      font-size: 16px;
+      -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
+      box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
+      margin-bottom: 20px;
 }
 
 .inputMain {
@@ -196,7 +196,7 @@ select {
 #contactUSForm .button {
     margin-top: 20px;
     background-color: #edea6a;
-    height: 50px;
+    height: 40px;
     border-radius: 6px;
     -webkit-box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
     box-shadow: -4px 8px 5px rgba(119, 115, 115, 0.16);
@@ -403,5 +403,25 @@ iframe {
         border-radius: 15px;
         box-shadow: #89d3d9 2px 2px;
         border: none;
+        background-color: #fff;
+    }
+
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select,
+    textarea {
+      font-size: 16px;
     }
 }

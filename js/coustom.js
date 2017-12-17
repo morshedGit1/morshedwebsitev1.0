@@ -15,6 +15,8 @@ $('#warpper').on('click', 'button#closeButton', function () {
     }, 700);
 });
 
+$.fn.fullpage.setAutoScrolling(false);
+$.fn.fullpage.setAutoScrolling(true);
 
 function openFourm() {
     var toggle = false;
@@ -51,7 +53,7 @@ function openFourm() {
         $.fn.fullpage.moveTo(2);
         document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLSehsJyLTDMek4vjIoCHahNzsFrKubWhyXR38xyu7Gib5K76mA/viewform?embedded=true';
     } else if (document.getElementById('Sapanca').selected == true) {
-        $.fn.fullpage.moveTo(5);
+        $.fn.fullpage.moveTo(2);
         document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLScKUy821rVeRY3AVWRZxhMlXRpjruI9Ui-S-moKOvLMAFWpVg/viewform?embedded=true';
     }
 }
