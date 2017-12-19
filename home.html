@@ -51,7 +51,7 @@
 
         <!-- SECTION 3 -->
         <div class="section">
-            <form id="contactUSForm" method="post">
+            <form id="contactUSForm" action="index.php" method="post" name="contactUsForm">
                 <div>
                     <h1> اتصل بنا </h1>
                     <p>تواصل معنا, نحن نهتم بعملائنا</p>
@@ -65,8 +65,8 @@
                         <input class="input" name="email" id="email" type="text" required="required" placeholder="بريدك الالكتروني">
                     </div>
                 </div>
-                <textarea name="msg" class="msg" id="msg" required="required" rows="8" placeholder="كيف ممكن نخدمك؟"></textarea>
-                <input class="button" type="button" id="submitFormData" onclick="SubmitFormData();" value="ارسل" />
+                <textarea name="message" class="msg" id="msg" required="required" rows="8" placeholder="كيف ممكن نخدمك؟"></textarea>
+                <input class="button" name="submit" type="button" id="submitFormData" onclick="SubmitFormData();" value="ارسل" />
             </form>
 
         </div>
