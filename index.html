@@ -10,8 +10,7 @@
     <!--STYLESHEETS-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Cairo&amp;subset=arabic" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="//www.fontstatic.com/f=droid-sans" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo&amp;subset=arabic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/custom.css" type="text/css">
@@ -52,7 +51,7 @@
 
         <!-- SECTION 3 -->
         <div class="section">
-            <form id="contactUSForm" action="index.php" method="post" name="contactUsForm">
+            <form id="contactUSForm" method="post">
                 <div>
                     <h1> اتصل بنا </h1>
                     <p>تواصل معنا, نحن نهتم بعملائنا</p>
@@ -66,8 +65,8 @@
                         <input class="input" name="email" id="email" type="text" required="required" placeholder="بريدك الالكتروني">
                     </div>
                 </div>
-                <textarea name="message" class="msg" id="msg" required="required" rows="8" placeholder="كيف ممكن نخدمك؟"></textarea>
-                <input class="button" name="submit" type="button" id="submitFormData" value="ارسل" />
+                <textarea name="msg" class="msg" id="msg" required="required" rows="8" placeholder="كيف ممكن نخدمك؟"></textarea>
+                <input class="button" type="button" id="submitFormData" onclick="SubmitFormData();" value="ارسل" />
             </form>
 
         </div>
