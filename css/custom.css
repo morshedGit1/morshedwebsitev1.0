@@ -63,7 +63,7 @@ select {
 }
 
 .countries button {
-    display=block;
+    display:block;
     color: #FFF;
     background-color: #89d3d9;
     border-radius: 5px;
@@ -75,7 +75,10 @@ select {
     margin: 20px 35% auto 35%;
 }
 
-
+.distination{
+  display:inline-block;
+  position: absolute;
+}
 
 .section:nth-child(1) .container {
 
