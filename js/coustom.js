@@ -12,40 +12,44 @@ $('#warpper').on('click', 'button#closeButton', function () {
 });
 
 function openFourm() {
-    var toggle = false;
-    if (toggle == false) {
-        $('#warpper  > div:nth-child(1)').after('<div class="section"><button id="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button><iframe id="googleFourm" src=""> <h1 style="font-size:100px;"></h1></iframe></div>');
-
-        //remembering the active section / slide
-        var activeSectionIndex = $('.fp-section.active').index();
-        var activeSlideIndex = $('.fp-section.active').find('.slide.active').index();
-
-        $.fn.fullpage.destroy('all');
-
-        //setting the active section as before
-        $('.section').eq(activeSectionIndex).addClass('active');
-
-        //were we in a slide? Adding the active state again
-        if (activeSlideIndex > -1) {
-            $('.section.active').find('.slide').eq(activeSlideIndex).addClass('active');
-        }
-
-        init();
-        toggle = true;
-    }
+    // var toggle = false;
+    // if (toggle == false) {
+    //     $('#warpper  > div:nth-child(1)').after('<div class="section"><button id="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button><iframe id="googleFourm" src=""> <h1 style="font-size:100px;"></h1></iframe></div>');
+    //
+    //     //remembering the active section / slide
+    //     var activeSectionIndex = $('.fp-section.active').index();
+    //     var activeSlideIndex = $('.fp-section.active').find('.slide.active').index();
+    //
+    //     $.fn.fullpage.destroy('all');
+    //
+    //     //setting the active section as before
+    //     $('.section').eq(activeSectionIndex).addClass('active');
+    //
+    //     //were we in a slide? Adding the active state again
+    //     if (activeSlideIndex > -1) {
+    //         $('.section.active').find('.slide').eq(activeSlideIndex).addClass('active');
+    //     }
+    //
+    //     init();
+    //     toggle = true;
+    // }
 
     if (document.getElementById('Istanbul').selected == true) {
-        $.fn.fullpage.moveTo(2);
-        document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLSdS75eA6UYY6EtO1znXI9V5w8VCOF5fRJ9J3nVhx1HZEVgAvA/viewform?embedded=true';
+      window.open('https://goo.gl/forms/8sdgh76fUPy7izIv1','_blank');
+        // $.fn.fullpage.moveTo(2);
+        // document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLSdS75eA6UYY6EtO1znXI9V5w8VCOF5fRJ9J3nVhx1HZEVgAvA/viewform?embedded=true';
     } else if (document.getElementById('Bursa').selected == true) {
-        $.fn.fullpage.moveTo(2);
-        document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLScjf1ETpDxt7iLD2VtInaYnt_DWzrZNbpMSazFz9cLG1rqZPw/viewform?embedded=true';
+      window.open('https://goo.gl/forms/xx9Yk2vvSTSZwH2v1','_blank');
+        // $.fn.fullpage.moveTo(2);
+        // document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLScjf1ETpDxt7iLD2VtInaYnt_DWzrZNbpMSazFz9cLG1rqZPw/viewform?embedded=true';
     } else if (document.getElementById('Yalova').selected == true) {
-        $.fn.fullpage.moveTo(2);
-        document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLSehsJyLTDMek4vjIoCHahNzsFrKubWhyXR38xyu7Gib5K76mA/viewform?embedded=true';
+      window.open('https://goo.gl/forms/4XAzxRKGWz1H21ea2','_blank');
+        // $.fn.fullpage.moveTo(2);
+        // document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLSehsJyLTDMek4vjIoCHahNzsFrKubWhyXR38xyu7Gib5K76mA/viewform?embedded=true';
     } else if (document.getElementById('Sapanca').selected == true) {
-        $.fn.fullpage.moveTo(2);
-        document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLScKUy821rVeRY3AVWRZxhMlXRpjruI9Ui-S-moKOvLMAFWpVg/viewform?embedded=true';
+      window.open('https://goo.gl/forms/FLiaBwXBEydeTG6P2','_blank');
+        // $.fn.fullpage.moveTo(2);
+        // document.getElementById('googleFourm').src = 'https://docs.google.com/forms/d/e/1FAIpQLScKUy821rVeRY3AVWRZxhMlXRpjruI9Ui-S-moKOvLMAFWpVg/viewform?embedded=true';
     }
 }
 
