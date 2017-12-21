@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css?family=Cairo&amp;subset=arabic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <link rel="stylesheet" href="css/custom.css" type="text/css">
 </head>
 
 <body>
     <!--FULLPAGE SECTIONS-->
-    <div id="warpper">
+    <div id="warpper1">
         <!--SECTION 1-->
         <div class="section">
 
@@ -47,7 +48,7 @@
 
         <!--SECTION 2-->
         <div class="section fp-auto-height">
-          <div class="section2">
+          <div class="container">
             <div class="row">
             <div class="col-md-4 featureSection">
               <img class="feature" src="img/feature1.png">
@@ -70,7 +71,8 @@
 
         <!-- SECTION 3 -->
         <div class="section">
-            <form id="contactUSForm" action="index.php" method="post" name="contactUsForm">
+
+            <form id="contactForm" method="post" novalidate>
                 <div>
                     <h1> اتصل بنا </h1>
                     <p>تواصل معنا, نحن نهتم بعملائنا</p>
@@ -78,15 +80,17 @@
                 <div class="row">
 
                     <div class="inputMain col-xs-12 col-lg-6">
-                        <input class="input" name="name" id="name" type="text" required="required" placeholder="اسمك الكريم">
+                        <input class="input" name="subject" id="name" type="text" required="required" placeholder="اسمك الكريم">
                     </div>
                     <div class="inputMain col-xs-12 col-lg-6">
-                        <input class="input" name="email" id="email" type="text" required="required" placeholder="بريدك الالكتروني">
+                        <input class="input" name="email" id="email" type="email" required="required" placeholder="بريدك الالكتروني">
                     </div>
                 </div>
                 <textarea name="message" class="msg" id="msg" required="required" rows="8" placeholder="كيف ممكن نخدمك؟"></textarea>
+
                 <input class="button" name="submit" type="button" id="submitFormData" value="ارسل" />
             </form>
+
 
         </div>
 
@@ -405,15 +409,24 @@
 <p style="direction: rtl;">آخر تحديث 15 يونيو 2017م</p>
         </div>
 
+
     </div>
 
-
+      <div class="notification">
+          <p class="errorText"><i class="fa fa-info-circle" aria-hidden="true"></i> حدث خطأ في ارسال الرسالة</p>
+          <p class="infoText"><i class="fa fa-info-circle" aria-hidden="true"></i>جاري ارسال الرسالة ..</p>
+          <p class="successText"><i class="fa fa-info-circle" aria-hidden="true"></i> تم ارسال الرسالة سعدنا بتواصلنا معك ..</p>
+  </div>
     <!--JS Files-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
+
+
     <script src="js\coustom.js" type="text/javascript"></script>
+    <script src="js\contactForm.js" type="text/javascript"></script>
+
     <script type="text/javascript">
 
 

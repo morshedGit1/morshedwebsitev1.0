@@ -1,6 +1,11 @@
-init();
+// init();
 
-function init(){$('#warpper').fullpage({});}
+
+function initx(){
+  $('#warpper').fullpage({
+
+
+});}
 
 $('#warpper').on('click', 'button#closeButton', function () {
     var section = $('.fp-section.active');
@@ -8,7 +13,9 @@ $('#warpper').on('click', 'button#closeButton', function () {
     setTimeout(function () {
         section.remove();
     }, 700);
+
 });
+
 
 function openFourm() {
     // var toggle = false;
@@ -145,18 +152,4 @@ function privacyAndPolicy() {
 
         }
     }
-}
-
-function refreshIFrame() {
-  document.getElementById("refreshButton").onclick = function (event){
-    document.getElementById('googleFourm').src = document.getElementById('googleFourm').src;
-  }
-}
-
-function backIFrame(){
-  document.getElementById("backButton").onclick = function (event){
-    document.getElementById('googleFourm').contentWindow.history.back(-1);
-    // window.frames['googleFourm'].history.go(-1);
-    console.log("Iam alive");
-  }
 }
