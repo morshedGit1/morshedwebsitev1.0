@@ -1,4 +1,3 @@
-// GOOGLE FOURM SECTION
 init();
 
 function init(){$('#warpper').fullpage({});}
