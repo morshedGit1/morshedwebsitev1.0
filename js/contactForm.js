@@ -15,7 +15,7 @@ $(document).ready(function() {
       /* validation logic goes here */
       $('.notification').removeClass(" success error info animated slideInRight");
       $.ajax({
-        url: "//formspree.io/jdawe02@gmail.com",
+        url: "//formspree.io/hello@morshedapp.com",
         method: "POST",
         data: {
           "email": email_val,
